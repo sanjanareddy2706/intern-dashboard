@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f3ff 0%, #ffffff 100%);
+  color: #1e1e2f;
+}
+
+.page-wrap {
+  max-width: 1100px;
+  margin: 16px auto;
+  padding: 0 16px 32px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: #3d63ff;
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.top-bar .brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.top-bar .link {
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.top-bar .link:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.btn-logout {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-logout:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 14px 28px rgba(18, 25, 35, 0.12);
+  padding: 16px;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 1.2rem;
+}
+
+.intern-form .form-row {
+  margin-bottom: 12px;
+}
+
+.intern-form label {
+  display: block;
+  font-size: 0.87rem;
+  margin-bottom: 6px;
+  color: #4b4e63;
+}
+
+.intern-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d7d8e3;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  background: #3d63ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #314be0;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+}
+
+.controls input,
+.controls select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #d7d8e3;
+  font-size: 0.9rem;
+}
+
+.intern-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.intern-list li {
+  background: #f8f9ff;
+  border: 1px solid #e2e5f8;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  display: grid;
+  gap: 6px;
+}
+
+.intern-list li strong {
+  color: #1a1d32;
+}
+
+.intern-list li small {
+  color: #6d7280;
+}
+
+.intern-list li button {
+  align-self: start;
+  background: #ff5e6c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.intern-list li button:hover {
+  background: #e04958;
+}
+
+.leaderboard {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.leaderboard li {
+  background: #f8f9ff;
+  border: 1px solid #e2e5f8;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+
+.intern {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.intern h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.intern p {
+  margin: 5px 0;
+}

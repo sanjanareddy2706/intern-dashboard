@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leaderboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script>
+    if (!localStorage.getItem("loggedIn")) {
+      window.location.href = "/login.html";
+    }
+  </script>
+  <div class="page-wrap">
+    <header class="top-bar">
+      <div class="brand">Intern Dashboard</div>
+      <nav>
+        <a href="/" class="link">Dashboard</a>
+        <button onclick="logout()" class="btn-logout">Logout</button>
+      </nav>
+    </header>
+
+    <main class="dashboard">
+      <section class="card">
+        <h2>Leaderboard</h2>
+        <ol class="leaderboard">
+          <li>Sanjana - ₹5000</li>
+          <li>Samhitha - ₹4000</li>
+          <li>You - ₹3000</li>
+        </ol>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    function logout() {
+      localStorage.removeItem("loggedIn");
+      window.location.href = "/login.html";
+    }
+  </script>
+</body>
+</html>
